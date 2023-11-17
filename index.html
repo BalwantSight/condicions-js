@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condiciones en Javascript</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1>Condiciones en Javascript</h1>
+
+      <!-- Tarea 1: Cambio de borde al hacer clic en la imagen -->
+      <div class="challenge-container">
+        <img
+          class="challenge-img"
+          src="./assets/img/cortazar.png"
+          alt="Julio Cortázar"
+        />
+        <h2>Haz click a Cortázar</h2>
+      </div>
+
+      <!-- Tarea 2: Verificación de la cantidad de stickers seleccionados -->
+      <div class="challenge-container">
+        <h2>Agrega stickers <br />de los escritores</h2>
+        <p>Selecciona los stickers. Puedes llevar un máximo de 10</p>
+        <div class="sticker-container">
+          <div class="sticker-request">
+            <img class="sticker" src="./assets/img/poe.png" alt="Frank Kafka" />
+            <input type="number" placeholder="Ingresa la cantidad" min="0" />
+          </div>
+
+          <div class="sticker-request">
+            <img
+              class="sticker"
+              src="./assets/img/lovecraft.png"
+              alt="H.P. Lovecraft"
+            />
+            <input type="number" placeholder="Ingresa la cantidad" min="0" />
+          </div>
+
+          <div class="sticker-request">
+            <img
+              class="sticker"
+              src="./assets/img/king.png"
+              alt="Stephen King"
+            />
+            <input type="number" placeholder="Ingresa la cantidad" min="0" />
+          </div>
+        </div>
+        <p class="message"></p>
+        <button class="verify">Verificar</button>
+      </div>
+
+      <!-- Tarea 3: Verificación de la contraseña al hacer clic en el botón "Ingresar" -->
+      <div class="challenge-container">
+        <h2>Acierta con 2 claves válidas</h2>
+        <p>Ingresa una clave</p>
+        <div class="buttons">
+          <select name="select1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <select name="select2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <select name="select3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+
+        <button class="login">Ingresar</button>
+        <p class="passMessage"></p>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
